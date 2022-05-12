@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Ejercicio APIs de HTML5</title>
+
+</head>
+<body>
+  <div>
+     <p>Selecciona tu video</p>
+      <input type="file" accept='video/*' id="file" onchange="startvideo()">
+    </div>
+
+    <div>
+    <figure>
+        <video id="video"> </video>
+    </figure>
+
+     <button onclick="document.getElementById('video').play();">
+          Reproducir
+        </button>
+        <button onclick="document.getElementById('video').pause();">
+          Pausa
+        </button>
+        <button onclick="document.getElementById('video').volume += 0.1;">
+          Subir Volumen
+        </button>
+        <button onclick="document.getElementById('video').volume -= 0.1;">
+          Bajar Volumen
+        </button>
+
+      </div>
+    </div>
+  </body>
+</html>
